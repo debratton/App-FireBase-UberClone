@@ -1,0 +1,6 @@
+framework module Pods_UbberClone {
+  umbrella header "Pods-UbberClone-umbrella.h"
+
+  export *
+  module * { export * }
+}
