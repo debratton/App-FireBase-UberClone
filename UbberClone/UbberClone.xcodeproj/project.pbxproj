@@ -14,6 +14,8 @@
 		902FB2B8217F8BE50021FA23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 902FB2B6217F8BE50021FA23 /* LaunchScreen.storyboard */; };
 		902FB2C0217F948C0021FA23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 902FB2BF217F948C0021FA23 /* GoogleService-Info.plist */; };
 		90703149217FFE34004AF4B8 /* RiderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90703148217FFE34004AF4B8 /* RiderVC.swift */; };
+		9070314B2180FC8D004AF4B8 /* DriverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070314A2180FC8D004AF4B8 /* DriverVC.swift */; };
+		9070314D218119E2004AF4B8 /* AcceptRequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070314C218119E2004AF4B8 /* AcceptRequestVC.swift */; };
 		C84115A432A46AACAD910245 /* Pods_UbberClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F21C14EB14D8906685F9BA9 /* Pods_UbberClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		902FB2B9217F8BE50021FA23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		902FB2BF217F948C0021FA23 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		90703148217FFE34004AF4B8 /* RiderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderVC.swift; sourceTree = "<group>"; };
+		9070314A2180FC8D004AF4B8 /* DriverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverVC.swift; sourceTree = "<group>"; };
+		9070314C218119E2004AF4B8 /* AcceptRequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptRequestVC.swift; sourceTree = "<group>"; };
 		FF2D35C3B02C33B21F5B19EB /* Pods-UbberClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UbberClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-UbberClone/Pods-UbberClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,12 +79,14 @@
 			children = (
 				902FB2AD217F8BE40021FA23 /* AppDelegate.swift */,
 				902FB2AF217F8BE40021FA23 /* LoginVC.swift */,
+				90703148217FFE34004AF4B8 /* RiderVC.swift */,
+				9070314A2180FC8D004AF4B8 /* DriverVC.swift */,
+				9070314C218119E2004AF4B8 /* AcceptRequestVC.swift */,
 				902FB2B1217F8BE40021FA23 /* Main.storyboard */,
 				902FB2B4217F8BE50021FA23 /* Assets.xcassets */,
 				902FB2B6217F8BE50021FA23 /* LaunchScreen.storyboard */,
 				902FB2B9217F8BE50021FA23 /* Info.plist */,
 				902FB2BF217F948C0021FA23 /* GoogleService-Info.plist */,
-				90703148217FFE34004AF4B8 /* RiderVC.swift */,
 			);
 			path = UbberClone;
 			sourceTree = "<group>";
@@ -173,12 +179,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-UbberClone/Pods-UbberClone-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,8 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9070314D218119E2004AF4B8 /* AcceptRequestVC.swift in Sources */,
 				90703149217FFE34004AF4B8 /* RiderVC.swift in Sources */,
 				902FB2B0217F8BE40021FA23 /* LoginVC.swift in Sources */,
+				9070314B2180FC8D004AF4B8 /* DriverVC.swift in Sources */,
 				902FB2AE217F8BE40021FA23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,5 +10,6 @@ target 'UbberClone' do
   # Pods for UbberClone
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end

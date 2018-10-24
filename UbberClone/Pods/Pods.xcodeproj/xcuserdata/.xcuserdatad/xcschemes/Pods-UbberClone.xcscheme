@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "84EE5FB6B82008E773CD8C036D36714A"
+               BlueprintIdentifier = "FB59B38878B4EBA268B8CBCB712D17F0"
                BlueprintName = "Pods-UbberClone"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-UbberClone.framework">
