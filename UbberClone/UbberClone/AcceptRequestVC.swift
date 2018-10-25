@@ -37,9 +37,20 @@ class AcceptRequestVC: UIViewController {
             Database.database().reference().child("RideRequests").removeAllObservers()
         }
         
-        
         // GIVE DIRECTIONS
-        
+        let requestCLLocation = CLLocation(latitude: requestLocation.latitude, longitude: requestLocation.longitude)
+        CLGeocoder().reverseGeocodeLocation(requestCLLocation) { (placemarks, error) in
+            if let placemarks = placemarks {
+                if placemarks.count > 0 {
+                    let placeMark = MKPlacemark(placemark: placemarks[0])
+                    let mapItem = MKMapItem(placemark: placeMark)
+                    mapItem.name = self.requestEmail
+                    let options = [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving]
+                    mapItem.openInMaps(launchOptions: options)
+                    
+                }
+            }
+        }
     }
     
 
